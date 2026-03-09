@@ -121,7 +121,7 @@ async function sendConfirmationEmail({
   const contractFilename = `License_${beatDisplay.replace(/[^a-zA-Z0-9]/g, '_').substring(0,30)}_${licenseName.replace(/ /g,'_')}.pdf`;
 
   await resend.emails.send({
-    from: 'Mikaelmadeit Beats <beats@yourdomain.com>', // ← update this
+    from: 'Mikaelmadeit Beats <onboarding@resend.dev>',
     to: buyerEmail,
     subject: `Your ${licenseName} — "${beatDisplay}" (prod. Mikaelmadeit)`,
     html,
